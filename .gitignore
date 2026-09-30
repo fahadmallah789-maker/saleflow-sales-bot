@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Secrets - never commit a real .env file
+.env
+.env.*
+!.env.example
+
+# Database files (keep the data folder itself)
+data/*
+!data/.gitkeep
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Coverage / build output
+coverage/
+dist/
