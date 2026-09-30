@@ -1,0 +1,26 @@
+{
+  "name": "saleflow-sales-app",
+  "version": "1.0.0",
+  "description": "SaleFlow - a web-based sales management application (products, customers, orders, invoices, reports).",
+  "main": "src/server.js",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "check": "node scripts/check.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "express-session": "^1.18.0",
+    "helmet": "^7.1.0"
+  }
+}
